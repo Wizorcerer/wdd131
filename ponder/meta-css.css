@@ -10,4 +10,26 @@ body{
 }
 img{
     width: 70%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+p{
+    color: #035f9c;
+}
+h1, h2, p{
+    text-align: center;
+}
+.list{
+    list-style-type: none;
+}
+#topics{
+    width: 55%;
+    margin: 0 auto;
+}
+hr{
+    height: 3px;
+    background-color: #035f9c;
+    width: 80%;
+    margin: 30px auto;
 }
