@@ -1,0 +1,27 @@
+body{
+    font-size: 15px;
+}
+#content{
+    max-width: 40%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+#subtitle{
+    color: #035f9c;
+}
+#topics{
+    width: 55%;
+    margin: 0 auto;
+}
+h1, #subtitle{
+    text-align: center;
+}
+li{
+    margin-bottom: 10px;
+}
+img{
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+}
