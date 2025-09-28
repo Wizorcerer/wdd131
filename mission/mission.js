@@ -1,5 +1,5 @@
 
-let selectElem = document.querySelector('select');
+let selectElem = document.getElementById('themeSelector');
 let logo = document.querySelector('img');
 let b = document.querySelector('body');
 
