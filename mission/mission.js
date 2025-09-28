@@ -8,8 +8,8 @@ selectElem.addEventListener('change', changeTheme);
 function changeTheme() {
     let current = selectElem.value;
     if (current == 'dark') {
-        b.classList.toggle("darkmode");
+        b.classList.add("darkmode");
     } else {
-        document.body.style.background = "white";
+        b.classList.remove("darkmode");
     }
 }
