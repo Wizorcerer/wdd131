@@ -7,7 +7,7 @@ selectElem.addEventListener('change', changeTheme);
 function changeTheme() {
     let current = selectElem.value;
     if (current == 'dark') {
-        document.body.classList.toggle("darkmode")
+        document.body.classList.toggle("darkmode");
     } else {
         document.body.style.background = "white";
     }
