@@ -10,6 +10,6 @@ function changeTheme() {
     if (current == 'dark') {
         document.body.classList.add("darkmode");
     } else {
-        b.classList.remove("darkmode");
+        document.body.classList.remove("darkmode");
     }
 }
