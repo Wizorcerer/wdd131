@@ -30,4 +30,5 @@ img{
 .darkmode{
     background-color: #333;
     color: white;
+    border-color: white;
 }
