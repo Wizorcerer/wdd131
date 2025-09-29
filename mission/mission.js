@@ -10,7 +10,9 @@ function changeTheme() {
     if (current == 'dark') {
         document.body.classList.add("darkmode");
         subtitle.style.color = "lightblue";
+        logo.setAttribute("src", "https://wddbyui.github.io/wdd131/images/byui-logo-white.png");
     } else {
         document.body.classList.remove("darkmode");
+        subtitle.style.color = "#035f9c";
     }
 }
