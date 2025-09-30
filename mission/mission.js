@@ -14,6 +14,6 @@ function changeTheme() {
     } else {
         document.body.classList.remove("darkmode");
         subtitle.style.color = "#035f9c";
-        logo.setAttribute("src", "byui-logo-blue.webp");
+        logo.setAttribute("src", "byui-logo-blue.png");
     }
 }
