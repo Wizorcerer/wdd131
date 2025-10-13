@@ -17,6 +17,9 @@ figure img {
     display: block;
     margin: 0 auto;
 }
+figure:hover, button:hover{
+    cursor: pointer;
+}
 /* modal */
 
 dialog img {
@@ -28,6 +31,11 @@ dialog {
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,.75);
+    z-index: 2;
+    top: -30px;
+}
+section{
+    z-index: 1;
 }
 .close-viewer {
     position: absolute;
@@ -36,7 +44,13 @@ dialog {
     padding: 3px 6px;
     font-size: 1.5em;
 }
-
+.full{
+    width: 100%;
+    display: block;  
+}
+.hidden{
+    display: none;
+}
 @media screen and (min-width: 700px) {
     .gallery {
         display: grid;

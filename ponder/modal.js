@@ -8,13 +8,15 @@ const closeButton = modal.querySelector('.close-viewer');
 gallery.addEventListener('click', openModal);
 
 function openModal(e) {
-    
-// Code to show modal  - Use event parameter 'e'   
-    
+    modal.classList.remove('hidden');
+    if (){
+        modalImage.setAttribute("src", "images/book-full.jpg");
+    }
 }
+
 // Close modal on button click
 closeButton.addEventListener('click', () => {
-    modal.close();
+    modal.classList.add('hidden');
 });
 
 // Close modal if clicking outside the image
@@ -23,4 +25,7 @@ modal.addEventListener('click', (event) => {
         modal.close();
     }
 });
-          
+
+modalImage.addEventListener('click');{
+    
+};
