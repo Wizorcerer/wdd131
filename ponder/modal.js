@@ -9,9 +9,6 @@ gallery.addEventListener('click', openModal);
 
 function openModal(e) {
     modal.classList.remove('hidden');
-    if (){
-        modalImage.setAttribute("src", "images/book-full.jpg");
-    }
 }
 
 // Close modal on button click
