@@ -6,7 +6,7 @@ steps.forEach(function(item){
 
 let mylist = document.querySelector('#mylist');
 
-steps = steps.map(listTemplate);
+steps.map(listTemplate);
 
 function listTemplate(item){
     return `<li>${item}</li>`
