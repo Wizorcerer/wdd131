@@ -4,7 +4,7 @@ steps.forEach(function(item){
     console.log(item)
 })
 
-mylist = document.querySelector('#mylist');
+let mylist = document.querySelector('#mylist');
 
 steps = steps.map(listTemplate);
 
