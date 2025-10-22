@@ -1,4 +1,4 @@
-const steps = ['one', 'two', 'three'];
+let steps = ['one', 'two', 'three'];
 
 steps.forEach(function(item){
     console.log(item)
@@ -6,7 +6,7 @@ steps.forEach(function(item){
 
 let mylist = document.querySelector('#mylist');
 
-steps.map(listTemplate);
+steps = steps.map(listTemplate);
 
 function listTemplate(item){
     return `<li>${item}</li>`
