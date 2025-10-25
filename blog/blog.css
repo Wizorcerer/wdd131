@@ -48,7 +48,7 @@ img{
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
-    .details{
+    #details{
         border-right: 2px solid #EFC69B;
     }
 }
