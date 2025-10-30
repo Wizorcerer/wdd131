@@ -31,6 +31,9 @@ nav a{
 nav{
     display: inline;
 }
+img:hover, button:hover{
+    cursor: pointer;
+}
 button{
     background: transparent;
     border: none;
@@ -40,6 +43,33 @@ button{
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 auto;
+}
+dialog img {
+    width: 50%;
+    margin: 20vh auto;
+    height: 60%
+}
+dialog {
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0,0,0,.75);
+    z-index: 2;
+    top: -30px;
+}
+.close-viewer {
+    display: block;
+    position: absolute;
+    top: 10vh;
+    right: 300px;
+    padding: 3px 6px;
+    font-size: 1.5em;
+}
+.full{
+    width: 100%;
+    display: block;  
+}
+.hidden{
+    display: none;
 }
 @media screen and (min-width: 700px) {
     #content{

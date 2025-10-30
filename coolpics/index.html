@@ -6,6 +6,7 @@
   <title>Cool Pics</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
 <header>
@@ -23,7 +24,7 @@
 <main>
     <h2>Current Work</h2>
     <div id="content">
-        <section>
+        <section id="pic">
             <img src="norris-sm.jpg">
         </section>
         <section>
@@ -51,6 +52,10 @@
           <img src="norris-sm.jpg">
         </section>
     </div>
+    <dialog class="hidden" class="full">
+      <img src="norris-sm.jpg" id="big" alt="full sized picture">
+      <button class="close-viewer">X</button>
+    </dialog>
 </main>
 <footer>&copy; not a real site</footer>
 </body>
