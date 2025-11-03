@@ -18,3 +18,5 @@ const element = document.createElement("p"); //creating an element
 newParagraph.textContent = "New content";
 
 element.setAttribute("src", "new-image.jpg"); //changing a specific attribute of an element
+
+console.group(Object.attribute)
