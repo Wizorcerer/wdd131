@@ -23,13 +23,13 @@ console.log(aCourse.code);
   document.querySelector('#courseName').textContent = aCourse.name;
   document.querySelector('#courseCode').textContent = aCourse.code;
 
-document.querySelector('img').setAttribute('src', aCourse.name);
+document.querySelector('img').setAttribute('src', aCourse.logo);
 document.querySelector('img').setAttribute('alt', 'JS Logo');
 document.querySelector('img').style.width = '100px';
 
 console.log(aCourse.sections[0].roomNum);
 
-aCourse.enrollStudent('');
+aCourse.enrollStudent();
 
 function sectionTemplate(section) {
     return `<tr>
