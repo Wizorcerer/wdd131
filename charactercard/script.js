@@ -1,20 +1,9 @@
 const character = {
-    name: 'Gerald', 
-    race: 'Grung',
-    class: ' Fighter',
-    alignment: 'Neutral Good',
-    ac: '11', 
-    health: '19', 
-    initiative: 1,
-    speed: 20/35,
-    maxHealth: 19,
-    level: 2, 
-    strength: 8,
-    dexterity: 17,
-    constitution: 15,
-    intelligence: 11,
-    wisdom: 13,
-    charisma: 15,
+    name: 'Gerald', race: 'Grung', level: 2, class: ' Fighter', alignment: 'Neutral Good', maxHealth: 19,
+    ac: '11', health: '19', initiative: 1,speed: 20/35, 
+    strength: 8, dexterity: 17, constitution: 15, intelligence: 11, wisdom: 13, charisma: 15,
+    acrobatics: 3, animal: 1, arcana: 0, athletics: -1, deception: 2, history: 0, insight: 1, intimidation: 2, investigation: 0,
+    medicine: 1, nature: 0, perception: 1, performance: 2, Persuasion: 2, religion: 0, sleight: 3, stealth: 3, survival: 1
 }
 
 document.querySelector('#class').textContent = character.class;

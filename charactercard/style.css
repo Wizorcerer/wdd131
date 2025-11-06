@@ -110,3 +110,10 @@ span{
     position: relative; top: -165px; left: 273px;
     color: #313131
 }
+#skills{
+    position: relative; top: 250px;
+    margin: 65px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(9, 1fr);
+}
