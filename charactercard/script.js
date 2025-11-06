@@ -26,7 +26,6 @@ function attacked() {
     document.querySelector('#health').textContent = character.health;
     if (character.health <= 0){
     alert('You are dead!');
-    character.health = 0;
     };
 }
 
