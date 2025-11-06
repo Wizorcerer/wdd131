@@ -4,6 +4,12 @@ const character = {
     maxHealth: 19, 
     health: '19', 
     level: 2, 
+    strength: 8,
+    dexterity: 17,
+    constitution: 15,
+    intelligence: 11,
+    wisdom: 13,
+    charisma: 15,
 }
 
 document.querySelector('#class').textContent = character.class;
@@ -41,3 +47,10 @@ const button3 = document.getElementById('resting');
 button3.addEventListener('click', longRest);
 
 console.log(character.level);
+
+document.querySelector('#strength').textContent = character.strength;
+document.querySelector('#dexterity').textContent = character.dexterity;
+document.querySelector('#constitution').textContent = character.constitution;
+document.querySelector('#intelligence').textContent = character.intelligence;
+document.querySelector('#wisdom').textContent = character.wisdom;
+document.querySelector('#charisma').textContent = character.charisma;
