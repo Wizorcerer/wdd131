@@ -1,7 +1,10 @@
 const character = {
     name: 'Gerald', 
-    class: 'Fighter',
-    maxHealth: 19, 
+    race: 'Grung',
+    class: ' Fighter',
+    alignment: 'Neutral Good',
+    ac: '11',
+    maxHealth: '19', 
     health: '19', 
     level: 2, 
     strength: 8,
@@ -15,6 +18,16 @@ const character = {
 document.querySelector('#class').textContent = character.class;
 document.querySelector('#level').textContent = character.level;
 document.querySelector('#health').textContent = character.health;
+document.querySelector('#strength').textContent = character.strength;
+document.querySelector('#dexterity').textContent = character.dexterity;
+document.querySelector('#constitution').textContent = character.constitution;
+document.querySelector('#intelligence').textContent = character.intelligence;
+document.querySelector('#wisdom').textContent = character.wisdom;
+document.querySelector('#charisma').textContent = character.charisma;
+document.querySelector('#race').textContent = character.race;
+document.querySelector('#alignment').textContent = character.alignment;
+document.querySelector('#maxHealth').textContent = character.maxHealth;
+document.querySelector('#ac').textContent = character.ac;
 
 function levelUp() {
     character.level += 1;
@@ -47,10 +60,3 @@ const button3 = document.getElementById('resting');
 button3.addEventListener('click', longRest);
 
 console.log(character.level);
-
-document.querySelector('#strength').textContent = character.strength;
-document.querySelector('#dexterity').textContent = character.dexterity;
-document.querySelector('#constitution').textContent = character.constitution;
-document.querySelector('#intelligence').textContent = character.intelligence;
-document.querySelector('#wisdom').textContent = character.wisdom;
-document.querySelector('#charisma').textContent = character.charisma;
