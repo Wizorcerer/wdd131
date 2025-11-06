@@ -1,6 +1,8 @@
 body {
     font-family: Palatino Linotype, sans-serif;
     background: #f0f4f8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .card {
@@ -9,6 +11,16 @@ body {
     box-shadow: 0 8px 16px rgba(0,0,0,0.9);
     width: 400px; 
     margin: 100px auto;
+    z-index: 4;
+}
+
+.secondary{
+    background: #313131;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.9);
+    width: 400px;
+    margin: 100px auto;
+    z-index: 1;
 }
 
 .image{
@@ -32,7 +44,7 @@ body {
     text-align: left;
 }
 
-.info p {
+p{
     margin: 5px 0;
     color: #f0f4f8;
 }
@@ -42,11 +54,6 @@ body {
     grid-template-columns: 1fr 1fr;
     margin: 10px 15px 7px 35px;
     text-align: left;
-}
-
-.stats p{
-    margin: 5px 0;
-    color: #f0f4f8;
 }
 
 .buttons {
@@ -67,4 +74,39 @@ button {
 
 button:hover {
     background-color: #58605a;
+}
+#top{
+    background-color: #ffffff;
+    height: 135px;
+    width: 100%;
+    border-radius: 15px;
+}
+.smstat{
+    text-align: center;
+    width: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 35px;
+    z-index: 3;
+}
+span{
+    margin: 0 auto;
+}
+.secondary img{
+    width: 100px;
+    z-index: 2
+}
+#shield{
+    position: relative; top: 20px; left: 20px;
+}
+#heart{
+    position: relative; top: 20px; left: 180px;
+}
+#armorClass{
+    position: relative; top: -90px; left: 23px;
+    color: #313131
+}
+#hp{
+    position: relative; top: -165px; left: 273px;
+    color: #313131
 }
