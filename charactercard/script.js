@@ -17,19 +17,19 @@ const characters = [
     },
     {
         image: "images/Eladrin.png",
-        name: '-', race: 'Eladrin', level: 1, class: ' Ranger', alignment: 'Chaotic Good', maxHealth: '-',
+        name: 'Arannis', race: 'Eladrin(Winter)', level: 1, class: ' Ranger', alignment: 'Chaotic Good', maxHealth: '-',
         ac: '-', health: '-', initiative: '-', speed: 30, 
-        strength: 8, dexterity: 16, constitution: 14, intelligence: 15, wisdom: 10, charisma: 11,
-        acrobatics: 3, animal: 0, arcana: 2, athletics: -1, deception: 0, history: 2, insight: 0, intimidation: 0, investigation: 2,
-        medicine: 0, nature: 2, perception: 0, performance: 0, persuasion: 0, religion: 2, sleight: 3, stealth: 3, survival: 0
+        strength: 16, dexterity: 14, constitution: 10, intelligence: 6, wisdom: 16, charisma: 10,
+        acrobatics: 2, animal: 3, arcana: -2, athletics: 3, deception: 1, history: -2, insight: 3, intimidation: 1, investigation: -2,
+        medicine: 3, nature: -2, perception: "3'", performance: 1, persuasion: 1, religion: -2, sleight: 2, stealth: 2, survival: 3
     },
     {
         image: "images/",
         name: '-', race: 'Rock Drake', level: 1, class: ' -', alignment: 'Lawful Good', maxHealth: '-',
-        ac: '-', health: '-', initiative: '-', speed: '-', 
-        strength: 8, dexterity: 16, constitution: 14, intelligence: 15, wisdom: 10, charisma: 11,
+        ac: '-', health: '64', initiative: '-', speed: '50/80', 
+        strength: 22, dexterity: 17, constitution: 14, intelligence: 8, wisdom: 10, charisma: 3,
         acrobatics: 3, animal: 0, arcana: 2, athletics: -1, deception: 0, history: 2, insight: 0, intimidation: 0, investigation: 2,
-        medicine: 0, nature: 2, perception: 0, performance: 0, persuasion: 0, religion: 2, sleight: 3, stealth: 3, survival: 0
+        medicine: 0, nature: 2, perception: 0, performance: 0, persuasion: 0, religion: 2, sleight: 3, stealth: "3'", survival: 0
     }
 ]
 
