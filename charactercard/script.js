@@ -2,7 +2,7 @@ const characters = [
     {
         image: "images/Gerald.webp",
         name: 'Gerald the Inevitable', race: 'Grung', level: 2, class: ' Fighter', alignment: 'Neutral Good', maxHealth: 19,
-        ac: '11', health: '19', initiative: 3,speed: 20/35, 
+        ac: '11', health: '19', initiative: 3,speed: 25/25, 
         strength: 8, dexterity: 17, constitution: 15, intelligence: 11, wisdom: 13, charisma: 15,
         acrobatics: 3, animal: 1, arcana: 0, athletics: -1, deception: 2, history: 0, insight: 1, intimidation: 2, investigation: 0,
         medicine: 1, nature: 0, perception: 1, performance: 2, persuasion: 2, religion: 0, sleight: 3, stealth: 3, survival: 1
@@ -11,6 +11,22 @@ const characters = [
         image: "images/Illvenator-Sh'var.png",
         name: 'Yorrim Grimm', race: 'Human', level: 1, class: ' Warlock', alignment: 'Neutral', maxHealth: 10,
         ac: '14', health: '10', initiative: 3,speed: 30, 
+        strength: 8, dexterity: 16, constitution: 14, intelligence: 15, wisdom: 10, charisma: 11,
+        acrobatics: 3, animal: 0, arcana: 2, athletics: -1, deception: 0, history: 2, insight: 0, intimidation: 0, investigation: 2,
+        medicine: 0, nature: 2, perception: 0, performance: 0, persuasion: 0, religion: 2, sleight: 3, stealth: 3, survival: 0
+    },
+    {
+        image: "images/Eladrin.png",
+        name: '-', race: 'Eladrin', level: 1, class: ' Ranger', alignment: 'Chaotic Good', maxHealth: '-',
+        ac: '-', health: '-', initiative: '-', speed: 30, 
+        strength: 8, dexterity: 16, constitution: 14, intelligence: 15, wisdom: 10, charisma: 11,
+        acrobatics: 3, animal: 0, arcana: 2, athletics: -1, deception: 0, history: 2, insight: 0, intimidation: 0, investigation: 2,
+        medicine: 0, nature: 2, perception: 0, performance: 0, persuasion: 0, religion: 2, sleight: 3, stealth: 3, survival: 0
+    },
+    {
+        image: "images/",
+        name: '-', race: 'Rock Drake', level: 1, class: ' -', alignment: 'Lawful Good', maxHealth: '-',
+        ac: '-', health: '-', initiative: '-', speed: '-', 
         strength: 8, dexterity: 16, constitution: 14, intelligence: 15, wisdom: 10, charisma: 11,
         acrobatics: 3, animal: 0, arcana: 2, athletics: -1, deception: 0, history: 2, insight: 0, intimidation: 0, investigation: 2,
         medicine: 0, nature: 2, perception: 0, performance: 0, persuasion: 0, religion: 2, sleight: 3, stealth: 3, survival: 0
