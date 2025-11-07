@@ -5,7 +5,7 @@ const characters = [
         ac: '11', health: '19', initiative: 1,speed: 20/35, 
         strength: 8, dexterity: 17, constitution: 15, intelligence: 11, wisdom: 13, charisma: 15,
         acrobatics: 3, animal: 1, arcana: 0, athletics: -1, deception: 2, history: 0, insight: 1, intimidation: 2, investigation: 0,
-        medicine: 1, nature: 0, perception: 1, performance: 2, Persuasion: 2, religion: 0, sleight: 3, stealth: 3, survival: 1
+        medicine: 1, nature: 0, perception: 1, performance: 2, persuasion: 2, religion: 0, sleight: 3, stealth: 3, survival: 1
     },
     {
         image: "images/Illvenator-Sh'var.png",
@@ -13,7 +13,7 @@ const characters = [
         ac: '14', health: '10', initiative: 3,speed: 30, 
         strength: 8, dexterity: 16, constitution: 14, intelligence: 15, wisdom: 10, charisma: 11,
         acrobatics: 3, animal: 0, arcana: 2, athletics: -1, deception: 0, history: 2, insight: 0, intimidation: 0, investigation: 2,
-        medicine: 0, nature: 2, perception: 0, performance: 0, Persuasion: 0, religion: 2, sleight: 3, stealth: 3, survival: 0
+        medicine: 0, nature: 2, perception: 0, performance: 0, persuasion: 0, religion: 2, sleight: 3, stealth: 3, survival: 0
     }
 ]
 
@@ -50,28 +50,31 @@ let characterList = document.getElementById('character-list');
             </div>
             <div id="other">
                 <h2>Equipped</h2>
+                <p></p>
                 <h2>Unequipped</h2>
+                <p></p>
                 <h2>Feats, Proficiencies, and Languages</h2>
+                <p></p>
             </div>
             <div id="skills">
-                <p><strong>Acrobatics: </strong><span id="acrobatics"></span></p>
-                <p><strong>Animal Handling: </strong><span id="animal"></span></p>
-                <p><strong>Arcana: </strong><span id="arcana"></span></p>
-                <p><strong>Athletics: </strong><span id="athletics"></span></p>
-                <p><strong>Deception: </strong><span id="deception"></span></p>
-                <p><strong>History: </strong><span id="history"></span></p>
-                <p><strong>Insight: </strong><span id="insight"></span></p>
-                <p><strong>Intimidation: </strong><span id="intimidation"></span></p>
-                <p><strong>Investigation: </strong><span id="investigation"></span></p>
-                <p><strong>Medicine: </strong><span id="medicine"></span></p>
-                <p><strong>Nature: </strong><span id="nature"></span></p>
-                <p><strong>Perception: </strong><span id="perception"></span></p>
-                <p><strong>Performance: </strong><span id="performance"></span></p>
-                <p><strong>Persuasion: </strong><span id="persuasion"></span></p>
-                <p><strong>Religion: </strong><span id="religion"></span></p>
-                <p><strong>Sleight of Hand: </strong id="sleight"><span></span></p>
-                <p><strong>Stealth: </strong><span id="stealth"></span></p>
-                <p><strong>Survival: </strong><span id="survival"></span></p>
+                <p><strong>Acrobatics: </strong><span id="acrobatics">${character.acrobatics}</span></p>
+                <p><strong>Animal Handling: </strong><span id="animal">${character.animal}</span></p>
+                <p><strong>Arcana: </strong><span id="arcana">${character.arcana}</span></p>
+                <p><strong>Athletics: </strong><span id="athletics">${character.athletics}</span></p>
+                <p><strong>Deception: </strong><span id="deception">${character.deception}</span></p>
+                <p><strong>History: </strong><span id="history">${character.history}</span></p>
+                <p><strong>Insight: </strong><span id="insight">${character.insight}</span></p>
+                <p><strong>Intimidation: </strong><span id="intimidation">${character.intimidation}</span></p>
+                <p><strong>Investigation: </strong><span id="investigation">${character.investigation}</span></p>
+                <p><strong>Medicine: </strong><span id="medicine">${character.medicine}</span></p>
+                <p><strong>Nature: </strong><span id="nature">${character.nature}</span></p>
+                <p><strong>Perception: </strong><span id="perception">${character.perception}</span></p>
+                <p><strong>Performance: </strong><span id="performance"${character.performance}></span></p>
+                <p><strong>Persuasion: </strong><span id="persuasion">${character.persuasion}</span></p>
+                <p><strong>Religion: </strong><span id="religion">${character.religion}</span></p>
+                <p><strong>Sleight of Hand: </strong id="sleight"><span>${character.sleight}</span></p>
+                <p><strong>Stealth: </strong><span id="stealth">${character.stealth}</span></p>
+                <p><strong>Survival: </strong><span id="survival">${character.survival}</span></p>
             </div>
         </div>
         `;
