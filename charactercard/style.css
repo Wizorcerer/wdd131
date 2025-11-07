@@ -27,7 +27,6 @@ body {
     width: 400px;
     border-radius: 15px 15px 0 0;
 }
-
 .name {
     font-size: 1.5em;
     font-weight: bold;
@@ -36,33 +35,62 @@ body {
     padding: 15px 0 15px 35px;
     background-color: #5d747b;
 }
-
-.info {
+.info{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     margin: 10px 15px 7px 35px;
     text-align: left;
 }
-
+#class{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-bottom: 0px;
+}
+#alignment{
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+#maxHealth{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
 p{
     margin: 5px 0;
     color: #f0f4f8;
 }
-
 .stats{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 10px 15px 7px 35px;
     text-align: left;
 }
-
+#dexterity{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+#constitution{
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+#intelligence{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+#wisdom{
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+#charisma{
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
 .buttons {
     text-align: center;
 }
-
 button {
     padding: 8px 12px;
-    margin: 20px;
+    margin: 0px 20px 20px 20px;
     border: none;
     border-radius: 8px;
     background-color: #5d747b;
@@ -111,7 +139,7 @@ span{
     color: #313131
 }
 #skills{
-    position: relative; top: 250px;
+    position: relative; top: -10px;
     margin: 65px;
     display: grid;
     grid-template-columns: 1fr 1fr;
