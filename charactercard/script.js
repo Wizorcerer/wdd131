@@ -69,9 +69,7 @@ const yorrim = characters.find(obj => obj.name === "Yorrim Grimm");
                 <p id="hp" class="smstat"><strong>Health</strong><span id="health">${character.health}</span><p>
             </div>
             <div id="other">
-                <h2>Equipped</h2>
-                <p></p>
-                <h2>Unequipped</h2>
+                <h2>Equipment</h2>
                 <p></p>
                 <h2>Feats, Proficiencies, and Languages</h2>
                 <p></p>
