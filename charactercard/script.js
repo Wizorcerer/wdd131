@@ -2,7 +2,7 @@ const characters = [
     {
         image: "images/Gerald.webp",
         name: 'Gerald the Inevitable', race: 'Grung', level: 2, class: ' Fighter', alignment: 'Neutral Good', maxHealth: 19,
-        ac: '11', health: '19', initiative: 1,speed: 20/35, 
+        ac: '11', health: '19', initiative: 3,speed: 20/35, 
         strength: 8, dexterity: 17, constitution: 15, intelligence: 11, wisdom: 13, charisma: 15,
         acrobatics: 3, animal: 1, arcana: 0, athletics: -1, deception: 2, history: 0, insight: 1, intimidation: 2, investigation: 0,
         medicine: 1, nature: 0, perception: 1, performance: 2, persuasion: 2, religion: 0, sleight: 3, stealth: 3, survival: 1
@@ -18,6 +18,8 @@ const characters = [
 ]
 
 let characterList = document.getElementById('character-list');
+const gerald = characters.find(obj => obj.name === "Gerald the Inevitable");
+const yorrim = characters.find(obj => obj.name === "Yorrim Grimm");
 
     characters.forEach(character => {
         let html = `<div class="card">
@@ -25,9 +27,9 @@ let characterList = document.getElementById('character-list');
             <h2 class="name">${character.name}</h2>
             <div class="info">
                 <p><strong>Race: </strong><span id="race">${character.race}</span><p>
-                <p id="class"><strong>Class: Lv</strong><span id="level">${character.level}${character.class}</span><p>
+                <p id="class"><strong>Class: Lv</strong><span id="level">${character.level}</span><span>${character.class}</span><p>
                 <p id="alignment"><strong>Alignment: </strong><span id="alignment"">${character.alignment}</span><p>
-                <p id="maxHealth"><strong>Max Health: </strong><span id="maxHealth">${character.maxHealth}</span><p>
+                <p id="maxHealth"><strong>Max Health: </strong><span id="max">${character.maxHealth}</span><p>
             </div>
             <div class="stats">
                 <p><strong>Str: </strong><span id="strength"">${character.strength}</span><p>
@@ -44,8 +46,10 @@ let characterList = document.getElementById('character-list');
         <div class="secondary">
             <div id="top">
                 <img id="shield" src="images/Shield-removebg-preview.png">
+                <img id="wing" src="images/wings-removebg-preview.png">
                 <img id="heart" src="images/heart-removebg-preview.png">
                 <p id="armorClass" class="smstat"><strong>AC</strong><span id="ac">${character.ac}</span><p>
+                <p id="initiative" class="smstat"><strong>Initiative</strong><span id="initiate">${character.initiative}</span><p>
                 <p id="hp" class="smstat"><strong>Health</strong><span id="health">${character.health}</span><p>
             </div>
             <div id="other">
@@ -69,7 +73,7 @@ let characterList = document.getElementById('character-list');
                 <p><strong>Medicine: </strong><span id="medicine">${character.medicine}</span></p>
                 <p><strong>Nature: </strong><span id="nature">${character.nature}</span></p>
                 <p><strong>Perception: </strong><span id="perception">${character.perception}</span></p>
-                <p><strong>Performance: </strong><span id="performance"${character.performance}></span></p>
+                <p><strong>Performance: </strong><span id="performance">${character.performance}</span></p>
                 <p><strong>Persuasion: </strong><span id="persuasion">${character.persuasion}</span></p>
                 <p><strong>Religion: </strong><span id="religion">${character.religion}</span></p>
                 <p><strong>Sleight of Hand: </strong id="sleight"><span>${character.sleight}</span></p>
@@ -81,33 +85,50 @@ let characterList = document.getElementById('character-list');
         characterList.innerHTML += html;
     });
 
-function levelUp() {
-    characters.level += 1;
-    document.querySelector('#level').textContent = character.level;
-    characters.maxHealth += 4;
-    characters.health = character.maxHealth;
-    document.querySelector('#health').textContent = character.health;
+function geraldLevelUp() {
+    gerald.level += 1;
+    document.querySelector('#level').textContent = gerald.level;
+    gerald.maxHealth += 4;
+    gerald.health = gerald.maxHealth;
+    document.querySelector('#health').textContent = gerald.health;
+    document.querySelector('#max').textContent = gerald.maxHealth
 }
-
-const button = document.getElementById('leveling');
-button.addEventListener('click', levelUp);
-
-function attacked() {
-    characters.health -= 3;
-    document.querySelector('#health').textContent = character.health;
-    if (characters.health <= 0){
-    alert('You are dead!');
+function geraldDamaged() {
+    gerald.health -= 3;
+    console.log(gerald.health);
+    document.querySelector('#health').textContent = gerald.health;
+    if (gerald.health <= 0){
+    alert('Gerald is dead!');
     };
 }
-
-const button2 = document.getElementById('damaging');
-button2.addEventListener('click', attacked);
-
-function longRest() {
-    characters.health = characters.maxHealth;
-    document.querySelector('#health').textContent = characters.health;
+function geraldLongRest() {
+    gerald.health = gerald.maxHealth;
+    document.querySelector('#health').textContent = gerald.health;
 }
-
+const button = document.getElementById('leveling');
+button.addEventListener('click', geraldLevelUp);
+const button2 = document.getElementById('damaging');
+button2.addEventListener('click', geraldDamaged);
 const button3 = document.getElementById('resting');
-button3.addEventListener('click', longRest);
+button3.addEventListener('click', geraldLongRest);
 
+function yorrimLevelUp() {
+    yorrim.level += 1;
+    document.querySelector('#level').textContent = yorrim.level;
+    yorrim.maxHealth += 4;
+    yorrim.health = yorrim.maxHealth;
+    document.querySelector('#health').textContent = yorrim.health;
+    document.querySelector('#max').textContent = yorrim.maxHealth
+}
+function yorrimDamaged() {
+    yorrim.health -= 3;
+    console.log(yorrim.health);
+    document.querySelector('#health').textContent = yorrim.health;
+    if (yorrim.health <= 0){
+    alert('Yorrim is dead!');
+    };
+}
+function yorrimLongRest() {
+    yorrim.health = yorrim.maxHealth;
+    document.querySelector('#health').textContent = yorrim.health;
+}
