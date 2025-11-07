@@ -14,7 +14,6 @@ body {
     z-index: 4;
 }
 section{
-    display: grid;
     margin: 0 400px;
 }
 .secondary{
@@ -42,7 +41,8 @@ section{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin: 10px 15px 7px 35px;
+    height: 10vh;
+    margin: 10px 15px 20px 35px;
     text-align: left;
 }
 #class{
@@ -155,9 +155,14 @@ span{
     color: #313131;
 }
 #skills{
-    position: relative; top: 50px;
+    position: relative; top: -20px;
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(9, 1fr);
+}
+@media screen and (min-width: 700px) {
+    section{
+        display: grid;
+    }
 }
