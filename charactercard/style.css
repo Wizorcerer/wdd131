@@ -139,10 +139,10 @@ span{
 }
 #hp{
     position: relative; top: -165px; left: 273px;
-    color: #313131
+    color: #313131 
 }
 #skills{
-    position: relative; top: 150px;
+    position: relative; top: 120px;
     margin: 65px;
     display: grid;
     grid-template-columns: 1fr 1fr;
