@@ -51,6 +51,7 @@ let characterList = document.getElementById('character-list');
             <div id="other">
                 <h2>Equipped</h2>
                 <h2>Unequipped</h2>
+                <h2>Feats, Proficiencies, and Languages</h2>
             </div>
             <div id="skills">
                 <p><strong>Acrobatics: </strong><span id="acrobatics"></span></p>
