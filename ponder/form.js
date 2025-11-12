@@ -9,7 +9,7 @@
     const paypalInput = document.querySelector('#paypalUsernameContainer input');
  
 function togglePaymentDetails(e) {
-    
+     
     // Show the container based on the selected payment method, and add the required attribute back.
         let value = e.target.value; 
         paypalContainer.classList.add('hide');

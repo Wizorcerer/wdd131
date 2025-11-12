@@ -21,7 +21,8 @@ const characters = [
         ac: '-', health: '-', initiative: '-', speed: 30, 
         strength: 16, dexterity: 14, constitution: 10, intelligence: 6, wisdom: 16, charisma: 10,
         acrobatics: 2, animal: 3, arcana: -2, athletics: 3, deception: 1, history: -2, insight: 3, intimidation: 1, investigation: -2,
-        medicine: 3, nature: -2, perception: "3'", performance: 1, persuasion: 1, religion: -2, sleight: 2, stealth: 2, survival: 3
+        medicine: 3, nature: -2, perception: "3'", performance: 1, persuasion: 1, religion: -2, sleight: 2, stealth: 2, survival: 3, 
+        
     },
     {
         image: "images/",
