@@ -98,10 +98,11 @@ p{
     }
     #footer{
         display: flex;
-        flex-direction: row;
-        width: 75%;
+        flex-direction: row-reverse;
+        width: 87%;
+        justify-content: right;
     }
-    #logos{
-        translate: 0;
+    #footer a{
+        margin-right: 20%;
     }
 }
