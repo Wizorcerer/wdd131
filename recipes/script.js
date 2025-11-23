@@ -297,14 +297,6 @@ recipes.forEach(recipe => {
             </span>
             <p><strong>This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</strong></p>
         </div>
-    </div>
-    <div id="footer">
-        <div id="logos">
-            <img src="images/instagram_icon.svg">
-            <img src="images/youtube_icon.svg">
-            <img src="images/pinterest_icon.svg">
-        </div>
-        <a href="">Recipe icons created by Freepik - Flaticon</a>
     </div>`;
     main.innerHTML += html;
 });
