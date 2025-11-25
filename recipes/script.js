@@ -1,7 +1,7 @@
 const recipes = [
 	{
 		author: 'Provo High Culinary Students',
-		url: '',
+		url: 'images/sweet-potato-waffle-md.jpg',
 		isBasedOn: '',
 		cookTime: '30 Min',
 		datePublished: '2016-10-16',
@@ -36,7 +36,7 @@ const recipes = [
 	},
 	{
 		author: 'Shane Thompson',
-		url: '',
+		url: 'images/escalopes-de-poulet-a-la-creme.webp',
 		isBasedOn: '',
 		cookTime: '20 min',
 		datePublished: '',
@@ -68,7 +68,7 @@ const recipes = [
 	},
 	{
 		author: 'Shane Thompson',
-		url: '',
+		url: 'images/roasted-potatoes.webp',
 		isBasedOn: '',
 		cookTime: '30 min',
 		datePublished: '2018-09-19',
@@ -98,7 +98,7 @@ const recipes = [
 	},
 	{
 		author: 'Shane Thompson',
-		url: '',
+		url: 'images/black-beans-and-rice.jpg',
 		isBasedOn: '',
 		cookTime: '20 min',
 		datePublished: '2018-09-19',
@@ -131,7 +131,7 @@ const recipes = [
 	},
 	{
 		author: 'Shane Thompson',
-		url: '',
+		url: 'images/chicken-curry.webp',
 		isBasedOn: '',
 		cookTime: '30 min',
 		datePublished: '2018-09-19',
@@ -169,7 +169,7 @@ const recipes = [
 	},
 	{
 		author: 'Shane Thompson',
-		url: '',
+		url: 'images/chocolate-chip-cookies.jpg',
 		isBasedOn: '',
 		cookTime: '11 min',
 		datePublished: '2018-09-19',
@@ -203,7 +203,7 @@ const recipes = [
 	},
 	{
 		author: 'Ester Kocht',
-		url: 'https://www.esterkocht.com/german-gooseberry-cake-with-vanilla-cream-and-crumble/',
+		url: 'images/german-gooseberry-cake.jpg',
 		isBasedOn: '',
 		cookTime: '45min',
 		datePublished: '2023-10-10',
@@ -246,7 +246,7 @@ const recipes = [
 	},
 	{
 		author: 'AllRecipes',
-		url: 'https://www.allrecipes.com/recipe/12409/apple-crisp-ii/',
+		url: 'images/apple-crisp.jpg',
 		isBasedOn: '',
 		cookTime: '45min',
 		datePublished: '2023-10-10',
@@ -281,13 +281,31 @@ const recipes = [
 ]
 
 const main = document.querySelector('#main');
+let button = document.querySelector('#enter');
+
+button.addEventListener('click', search);
 
 recipes.forEach(recipe => {
     let html = `<div id="wrapper">
-        <img id="example" src="images/apple-crisp.jpg">
+        <img id="example" src="${recipe.url}">
         <div id="main">
-            <button id="type"><strong>dessert</strong></button>
-            <h2>Apple Crisp</h2>
+            ${displayTags(recipe.tags)}
+            <h2>${recipe.name}</h2>
+            <span class="rating" role="img">
+                ${displayRating(recipe.rating)}
+            </span>
+            <p><strong>${recipe.description}</strong></p>
+        </div>
+    </div>`;
+    main.innerHTML += html;
+});
+
+function render(recipe){
+    let html = `<div id="wrapper">
+        <img id="example" src="${recipe.url}">
+        <div id="main">
+            ${displayTags(recipe.tags)}
+            <h2>${recipe.name}</h2>
             <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
                 <span aria-hidden="true" class="icon-star">⭐</span>
                 <span aria-hidden="true" class="icon-star">⭐</span>
@@ -295,8 +313,46 @@ recipes.forEach(recipe => {
                 <span aria-hidden="true" class="icon-star">⭐</span>
                 <span aria-hidden="true" class="icon-star-empty">☆</span>
             </span>
-            <p><strong>This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</strong></p>
+            <p><strong>${recipe.description}</strong></p>
         </div>
     </div>`;
     main.innerHTML += html;
-});
+}
+
+function search() {
+	let query = document.querySelector('#search').value;
+
+	let filtered = recipes.filter(function(recipe){
+		return (
+			recipe.name.toLocaleLowerCase().includes(query.toLocaleLowerCase()) ||
+			recipe.description.toLowerCase().includes(query.toLowerCase()) || 
+            recipe.tags.find(tag => tag.toLowerCase().includes(query.toLowerCase()))
+		)
+	})
+
+	main.innerHTML = '';
+    filtered.forEach(function(recipe){
+      render(recipe);
+	})
+}
+
+function displayRating(rating) {
+	let html = `<span class="rating" role="img" aria-label="Rating: ${rating} out of 5">  `
+    for (let i = 1; i <= 5; i++) {
+      if (i <= rating) {
+        html += `<span aria-hidden="true" class="icon-boot"> ⭐</span>`
+      } else {
+        html += `<span aria-hidden="true" class="icon-empty">☆</span>`
+      }			
+    }
+    html += `</span>`
+    return html
+}
+
+function displayTags(tags) {
+	let html = ``
+	tags.forEach(tag => {
+		html += `<button id="type"><strong>${tag}</strong></button>`;
+	})
+	return html
+}

@@ -87,6 +87,7 @@ p{
     }
     #wrapper{
         display: flex;
+        width: 65%;
     }
     #type{
         width: 100px;
@@ -104,5 +105,8 @@ p{
     }
     #footer a{
         margin-right: 20%;
+    }
+    #wrapper img{
+        width: 40%;
     }
 }
